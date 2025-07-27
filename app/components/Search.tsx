@@ -7,7 +7,7 @@ type Props = {}
 function Search({}: Props) {
   return (
     <div
-      className="bg-gray-200 px-4 py-2 rounded-sm flex gap-3 items-center">
+      className="bg-[#F4F5F6] px-4 py-2 rounded-sm flex gap-3 items-center">
       <FaSearch className="w-4 fill-[#B1B5C3]" />
       <input
         className="focus:outline-none placeholder-[#B1B5C3]"

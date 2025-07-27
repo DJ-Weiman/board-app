@@ -13,9 +13,9 @@
 }
 
 @theme {
-  --color-mainBG: #E6E8EC;
-  --color-searchBG: #F4F5F6
-  --color-evenSectionBG: #011121;
+  --color-mainBG: #FFFFFF;
+  --color-searchBG: #f4f5f6;
+  --color-textMain: #777E90;
 }
 
 

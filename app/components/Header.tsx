@@ -13,11 +13,11 @@ type Props = {}
 
 function Header({ }: Props) {
     return (
-        <div className='bg-white flex justify-between text-white h-20 px-6 items-center'>
+        <div className='bg-mainBG flex justify-between text-white h-20 px-6 items-center'>
             <Image src={logo.src} width={140} height={140} alt='Logo Image' />
             <div className='flex gap-6 items-center'>
-                <button className='bg-blue-600 px-4 py-3 rounded-md flex items-center gap-6 text-sm'>
-                    Create new board 
+                <button className='bg-blue-600 px-4 py-3 rounded-md flex items-center gap-6 text-sm line'>
+                    <p className=''>Create new board</p>
                     <FaPlus width={10} height={10} />
                 </button>
                 <Search />

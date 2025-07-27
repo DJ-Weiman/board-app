@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Header from "./components/Header";
-import SideNav from "./components/SideNav";
+import Header from "./components/Header/Header";
+import SideNav from "./components/SideNav/SideNav";
 
 export default function Home() {
   return (

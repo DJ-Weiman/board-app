@@ -4,13 +4,12 @@ import { RxDashboard } from "react-icons/rx";
 import { FaRegFolder } from "react-icons/fa6";
 
 
-import SideNavOption from './SideNavOption';
 import { TbMessageDots } from 'react-icons/tb';
-import { PiCalendarDotsFill, PiCalendarDotsThin } from 'react-icons/pi';
 import { LuUserRound } from 'react-icons/lu';
 import { BsCalendarMinus } from 'react-icons/bs';
-import { IoIosInformationCircle, IoIosInformationCircleOutline } from 'react-icons/io';
+import { IoIosInformationCircleOutline } from 'react-icons/io';
 import { BiLogOut } from 'react-icons/bi';
+import SideNavOption from './SideNavOption';
 
 
 type Props = {}

@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../../public/logo.svg'
-import settings from '../../public/settings.svg'
-import bell from '../../public/Bell.svg'
-import profile from '../../public/profile.svg'
+import logo from '../../../public/logo.svg'
+import settings from '../../../public/settings.svg'
+import bell from '../../../public/Bell.svg'
+import profile from '../../../public/profile.svg'
 import { FaPlus } from "react-icons/fa6";
 
 import Image from 'next/image';

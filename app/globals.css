@@ -12,6 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-mainBG: #E6E8EC;
+  --color-searchBG: #F4F5F6
+  --color-evenSectionBG: #011121;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

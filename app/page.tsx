@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header/Header";
 import SideNav from "./components/SideNav/SideNav";
+import ProjectHeader from "./components/ProjectHeader";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <span className="w-px bg-gray-300" />
 
         <div className="flex-1 p-6 bg-mainBG">
+          <ProjectHeader title="Project Title" description="This is a project description." />
         </div>
       </div>
     </main>

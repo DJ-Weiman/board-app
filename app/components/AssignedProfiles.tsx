@@ -1,15 +1,42 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
+type Props = {
+  size: number;
+  count: number;
+}
 
-function AssignedProfiles({}: Props) {
+function AssignedProfiles({ size, count }: Props) {
+  const maxIcons = 3;
+  const iconsToShow = Math.min(count, maxIcons);
+  const excess = count - maxIcons;
+
   return (
     <div className="flex -space-x-2">
-        <Image src='/profile.svg' alt='profile1' width={25} height={25} className='rounded-full border-1 border-white' />
-        <Image src='/profile.svg' alt='profile2' width={25} height={25} className='rounded-full border-1 border-white' />
-        <Image src='/profile.svg' alt='profile3' width={25} height={25} className='rounded-full border-1 border-white' />
-      </div>
+      {[...Array(3)].map((_, idx) => {
+        console.log(`Rendering profile ${iconsToShow}`)
+        return (
+          <Image
+            key={idx}
+            src='/profile.svg'
+            alt={`profile${idx + 1}`}
+            width={size}
+            height={size}
+            className='rounded-full border-1 border-white'
+          />
+        )
+      })}
+      {count > maxIcons && (
+        <div
+          className="rounded-full border-1 border-white bg-gray-200 flex items-center justify-center"
+          style={{ width: size, height: size }}
+        >
+          <span className="text-[9px] font-semibold text-gray-700">
+            +{excess}
+          </span>
+        </div>
+      )}
+    </div>
   )
 }
 

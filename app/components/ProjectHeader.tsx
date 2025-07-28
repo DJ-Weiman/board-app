@@ -21,7 +21,7 @@ function ProjectHeader({ title, description, lastUpdated }: Props) {
 
       <div className='flex gap-4 items-center'>
         <p >assigned: </p>
-        <AssignedProfiles />
+        <AssignedProfiles size={25}/>
          <button className="flex items-center gap-2 px-3 py-1 rounded-full border-textMain border-1 text-textMain transition">
           <span className='text-sm'>Manage</span>
           <LuPen className="w-4 h-4" />

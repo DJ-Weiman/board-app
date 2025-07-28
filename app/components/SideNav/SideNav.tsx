@@ -6,7 +6,7 @@ import { FaRegFolder } from "react-icons/fa6";
 
 import { TbMessageDots } from 'react-icons/tb';
 import { LuUserRound } from 'react-icons/lu';
-import { BsCalendarMinus } from 'react-icons/bs';
+import { BsCalendarMinus, BsCalendarRange } from 'react-icons/bs';
 import { IoIosInformationCircleOutline } from 'react-icons/io';
 import { BiLogOut } from 'react-icons/bi';
 import SideNavOption from './SideNavOption';
@@ -41,7 +41,7 @@ const SideNav = (props: Props) => {
                         icon={<TbMessageDots className="w-6 h-6" />}
                         text="Messages" />
                     <SideNavOption
-                        icon={<BsCalendarMinus className="w-6 h-6" />}
+                        icon={<BsCalendarRange className="w-6 h-6" />}
                         text="Calender" />
                     <SideNavOption
                         icon={<LuUserRound className="w-6 h-6" />}

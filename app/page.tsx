@@ -12,9 +12,11 @@ export default function Home() {
         <SideNav />
         <span className="w-px bg-gray-300" />
 
-        <div className="flex-1 p-6 bg-mainBG">
-          <ProjectHeader title="Project Title" description="This is a project description." />
+        <div className="flex-1 bg-mainBG">
+          <ProjectHeader title="Project Title" description="This is a project description." lastUpdated="04 Apr, 2025" />
+          <hr className="border-red border-0.5 mt-1" />
         </div>
+
       </div>
     </main>
   );

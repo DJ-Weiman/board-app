@@ -25,7 +25,18 @@ function LaneContainer({chipState}: Props) {
         </div>
       </div>
       <div className="flex-1 p-4 min-h-screen">
-        <TaskCard />
+        <TaskCard
+          title="Sample Task"
+          label="Feature"
+          priority="High"
+          assignedCount={2}
+          dueDate="2025-07-11"
+          taskImg="./placeholder.png"
+          labelColor="bg-blue-400"
+          priorityColor="bg-yellow-200"
+          linksCount={3}
+          commentsCount={5}
+        />
       </div>
     </div>
   )

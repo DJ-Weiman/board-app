@@ -19,10 +19,10 @@ export default function Home() {
           <hr className="border-red border-0.5 mt-1" />
 
           <div id="swimLane" className="flex mt-2 flex-1 gap-2">
-            <LaneContainer chipState="To Do" />
-            <LaneContainer chipState="In Progress"/>
-            <LaneContainer chipState="Approved"/>
-            <LaneContainer chipState="Reject"/>
+            <LaneContainer laneType="To Do" />
+            <LaneContainer laneType="In Progress"/>
+            <LaneContainer laneType="Approved"/>
+            <LaneContainer laneType="Reject"/>
           </div>
         </div>
 

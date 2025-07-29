@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 type Props = {
-    state: StatusChipState;
+    state: Status;
     type: "rounded" | "square";
 }
 

@@ -5,15 +5,15 @@ import { BsThreeDots } from 'react-icons/bs'
 import TaskCard from './TaskCard'
 
 type Props = {
-    chipState: StatusChipState;
+    laneType: Status;
 }
 
-function LaneContainer({chipState}: Props) {
+function LaneContainer({laneType}: Props) {
   return (
      <div className="flex flex-col h-full w-full bg-swimlaneBG rounded-lg">
       <div className="flex items-center justify-between bg-white h-10 px-4">
         <div className="flex items-center gap-2">
-          <StatusChip type="rounded" state={chipState} />
+          <StatusChip type="rounded" state={laneType} />
         </div>
         <div className="flex items-center gap-3">
           <button className="p-1 rounded-full hover:bg-gray-100">

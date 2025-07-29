@@ -1,8 +1,8 @@
+import Header from "@/ui/components/Header/Header";
+import ProjectHeader from "@/ui/components/ProjectHeader";
+import SideNav from "@/ui/components/SideNav/SideNav";
+import LaneContainer from "@/ui/components/SwimLane/LaneContainer";
 import Image from "next/image";
-import Header from "./components/Header/Header";
-import SideNav from "./components/SideNav/SideNav";
-import ProjectHeader from "./components/ProjectHeader";
-import LaneContainer from "./components/SwimLane/LaneContainer";
 
 export default function Home() {
   return (

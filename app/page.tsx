@@ -15,7 +15,7 @@ export default function Home() {
         <span className="w-px bg-gray-300" />
 
         <div className="flex-1 flex-col h-full">
-          <ProjectHeader title="Project Title" description="This is a project description." lastUpdated="04 Apr, 2025" />
+          <ProjectHeader/>
           <hr className="border-red border-0.5 mt-1" />
 
           <div id="swimLane" className="flex mt-2 flex-1 gap-2">

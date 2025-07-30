@@ -7,23 +7,10 @@ import {
 import AssignedProfiles from "../AssignedProfiles";
 import { RiLinkM } from "react-icons/ri";
 import { AiOutlineMessage } from "react-icons/ai";
-type Props = {
-  title: string;
-  label: string;
-  labelColor?: string;
-  priority: string;
-  priorityColor?: string;
-  assignedCount: number;
-  taskImg: string;
-  linksCount: number;
-  commentsCount: number;
-  dueDate: string;
-};
 
 function TaskCard({
   title,
   label,
-  labelColor = "bg-red-400",
   priority,
   priorityColor = "bg-gray-100",
   assignedCount,
@@ -31,12 +18,12 @@ function TaskCard({
   linksCount,
   commentsCount,
   dueDate,
-}: Props) {
+}: Task) {
   return (
-    <div className="bg-white text-textMain p-2 flex flex-col">
+    <div className="bg-white text-textMain p-2 flex flex-col mb-4">
       <div className="flex items-center gap-2 justify-between">
         <div className="flex items-center gap-2">
-          <div className={`w-2 h-2 rounded-xs ${labelColor}`} />
+          <div className={`w-2 h-2 rounded-xs ${priorityColor}`} />
           <p className="text-xs">{label}</p>
         </div>
         <BsThreeDots className="w-3 h-3 fill-gray-500 self-end" />
@@ -54,9 +41,11 @@ function TaskCard({
         </div>
       </div>
 
-      <div className="bg-[#353945] rounded-md flex items-center justify-center h-22 mt-3">
-        <img src={taskImg} alt="task image" width={40} height={40} />
-      </div>
+      {taskImg && (
+        <div className="bg-[#353945] rounded-md flex items-center justify-center h-22 mt-3">
+          <img src={taskImg} alt="task image" width={40} height={40} />
+        </div>
+      )}
 
       <hr className="border-textMain border-0.8 mt-4 opacity-20" />
 
@@ -78,7 +67,7 @@ function TaskCard({
         {dueDate && (
           <div className="flex gap-1 items-center">
             <BsCalendarRange className="w-3 h-3 fill-gray-500" />
-            <p className="text-xs">Due: {dueDate}</p>
+            <p className="text-xs">Due: {(new Date(dueDate)).toDateString()}</p>
           </div>
         )}
       </div>

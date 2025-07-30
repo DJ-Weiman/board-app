@@ -14,7 +14,6 @@ function AssignedProfiles({ size, count }: Props) {
   return (
     <div className="flex -space-x-2">
       {[...Array(3)].map((_, idx) => {
-        console.log(`Rendering profile ${iconsToShow}`)
         return (
           <Image
             key={idx}

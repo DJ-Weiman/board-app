@@ -1,7 +1,7 @@
-const sampleProject: Project = {
+export const sampleProject: Project = {
   "id": "proj-001",
   "title": "Cloud Native E-commerce Platform Migration",
-  "description": "Migrate existing monolithic e-commerce application to a scalable, microservices-based cloud-native architecture using Kubernetes, Spring Boot, and Next.js. Focus on improved performance, resilience, and developer experience.",
+  "description": "Migrate existing monolithic e-commerce application to a scalable, microservices-based cloud-native architecture.",
   "status": "In Progress",
   "assignedUsers": [
     {
@@ -51,7 +51,6 @@ const sampleProject: Project = {
       "priority": "Critical",
       "priorityColor": "#DC3545",
       "assignedCount": 3,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Auth",
       "linksCount": 2,
       "commentsCount": 12,
       "dueDate": "2025-08-10T23:59:59.000Z"
@@ -65,7 +64,6 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=DB",
       "linksCount": 1,
       "commentsCount": 5,
       "dueDate": "2025-07-20T23:59:59.000Z"
@@ -79,7 +77,6 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=API",
       "linksCount": 4,
       "commentsCount": 9,
       "dueDate": "2025-08-15T23:59:59.000Z"
@@ -93,7 +90,6 @@ const sampleProject: Project = {
       "priority": "Critical",
       "priorityColor": "#DC3545",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=FE",
       "linksCount": 1,
       "commentsCount": 3,
       "dueDate": "2025-08-12T23:59:59.000Z"
@@ -107,7 +103,6 @@ const sampleProject: Project = {
       "priority": "Medium",
       "priorityColor": "#007BFF",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Pay",
       "linksCount": 0,
       "commentsCount": 2,
       "dueDate": "2025-07-25T23:59:59.000Z"
@@ -121,7 +116,6 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Cart",
       "linksCount": 3,
       "commentsCount": 11,
       "dueDate": "2025-08-20T23:59:59.000Z"
@@ -135,7 +129,6 @@ const sampleProject: Project = {
       "priority": "Medium",
       "priorityColor": "#007BFF",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=PDP",
       "linksCount": 0,
       "commentsCount": 4,
       "dueDate": "2025-08-08T23:59:59.000Z"
@@ -149,7 +142,6 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=CI/CD",
       "linksCount": 5,
       "commentsCount": 15,
       "dueDate": "2025-07-10T23:59:59.000Z"
@@ -163,10 +155,8 @@ const sampleProject: Project = {
       "priority": "Critical",
       "priorityColor": "#DC3545",
       "assignedCount": 3,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Order",
       "linksCount": 2,
       "commentsCount": 10,
-      "dueDate": "2025-08-25T23:59:59.000Z"
     },
     {
       "id": "task-011",
@@ -177,10 +167,8 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=PLP",
       "linksCount": 1,
       "commentsCount": 6,
-      "dueDate": "2025-08-18T23:59:59.000Z"
     },
     {
       "id": "task-012",
@@ -191,10 +179,9 @@ const sampleProject: Project = {
       "priority": "Critical",
       "priorityColor": "#DC3545",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Bug",
+      "taskImg": "",
       "linksCount": 1,
       "commentsCount": 8,
-      "dueDate": "2025-08-03T23:59:59.000Z"
     },
     {
       "id": "task-013",
@@ -205,10 +192,9 @@ const sampleProject: Project = {
       "priority": "Medium",
       "priorityColor": "#007BFF",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=ELK",
+      "taskImg": "",
       "linksCount": 0,
       "commentsCount": 3,
-      "dueDate": "2025-08-10T23:59:59.000Z"
     },
     {
       "id": "task-014",
@@ -219,10 +205,9 @@ const sampleProject: Project = {
       "priority": "Medium",
       "priorityColor": "#007BFF",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Profile",
+      "taskImg": "",
       "linksCount": 2,
       "commentsCount": 7,
-      "dueDate": "2025-07-28T23:59:59.000Z"
     },
     {
       "id": "task-015",
@@ -233,10 +218,9 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Perf",
+      "taskImg": "",
       "linksCount": 1,
       "commentsCount": 4,
-      "dueDate": "2025-08-07T23:59:59.000Z"
     },
     {
       "id": "task-016",
@@ -247,10 +231,9 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Dash",
+      "taskImg": "",
       "linksCount": 0,
       "commentsCount": 5,
-      "dueDate": "2025-08-22T23:59:59.000Z"
     },
     {
       "id": "task-017",
@@ -261,10 +244,9 @@ const sampleProject: Project = {
       "priority": "Low",
       "priorityColor": "#6C757D",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=JUnit",
+      "taskImg": "",
       "linksCount": 1,
       "commentsCount": 2,
-      "dueDate": "2025-07-18T23:59:59.000Z"
     },
     {
       "id": "task-018",
@@ -275,10 +257,9 @@ const sampleProject: Project = {
       "priority": "Critical",
       "priorityColor": "#DC3545",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Img",
+      "taskImg": "",
       "linksCount": 1,
       "commentsCount": 10,
-      "dueDate": "2025-08-01T23:59:59.000Z"
     },
     {
       "id": "task-019",
@@ -289,10 +270,9 @@ const sampleProject: Project = {
       "priority": "High",
       "priorityColor": "#FFC107",
       "assignedCount": 2,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=GW",
+      "taskImg": "",
       "linksCount": 2,
       "commentsCount": 6,
-      "dueDate": "2025-08-15T23:59:59.000Z"
     },
     {
       "id": "task-020",
@@ -303,10 +283,9 @@ const sampleProject: Project = {
       "priority": "Medium",
       "priorityColor": "#007BFF",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Admin",
+      "taskImg": "",
       "linksCount": 0,
       "commentsCount": 3,
-      "dueDate": "2025-08-10T23:59:59.000Z"
     },
     {
       "id": "task-021",
@@ -317,10 +296,9 @@ const sampleProject: Project = {
       "priority": "Low",
       "priorityColor": "#6C757D",
       "assignedCount": 1,
-      "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Mig",
+      "taskImg": "",
       "linksCount": 1,
       "commentsCount": 1,
-      "dueDate": "2025-07-22T23:59:59.000Z"
     },
     {
       "id": "task-022",
@@ -334,7 +312,6 @@ const sampleProject: Project = {
       "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Trace",
       "linksCount": 0,
       "commentsCount": 1,
-      "dueDate": "2025-08-05T23:59:59.000Z"
     },
     {
       "id": "task-023",
@@ -348,7 +325,6 @@ const sampleProject: Project = {
       "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Bug",
       "linksCount": 1,
       "commentsCount": 4,
-      "dueDate": "2025-07-29T23:59:59.000Z"
     },
     {
       "id": "task-024",
@@ -362,7 +338,6 @@ const sampleProject: Project = {
       "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Notif",
       "linksCount": 2,
       "commentsCount": 8,
-      "dueDate": "2025-08-20T23:59:59.000Z"
     },
     {
       "id": "task-025",
@@ -376,7 +351,6 @@ const sampleProject: Project = {
       "taskImg": "https://placehold.co/150x100/A0A0A0/FFFFFF?text=Search",
       "linksCount": 0,
       "commentsCount": 2,
-      "dueDate": "2025-08-14T23:59:59.000Z"
     }
   ]
 }

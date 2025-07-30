@@ -20,7 +20,7 @@ type Task = {
     priority: string;
     priorityColor?: string;
     assignedCount: number;
-    taskImg: string;
+    taskImg?: string;
     linksCount: number;
     commentsCount: number;
     dueDate?: string;

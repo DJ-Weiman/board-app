@@ -7,8 +7,10 @@ import {
 import AssignedProfiles from "../AssignedProfiles";
 import { RiLinkM } from "react-icons/ri";
 import { AiOutlineMessage } from "react-icons/ai";
+import { useDraggable } from "@dnd-kit/core";
 
 function TaskCard({
+  id: taskId,
   title,
   label,
   priority,
@@ -19,8 +21,22 @@ function TaskCard({
   commentsCount,
   dueDate,
 }: Task) {
+
+  const { attributes, listeners, setNodeRef, transform } = useDraggable({
+    id: taskId,
+  });
+
+  const style = transform ? {
+    transform: `translate(${transform.x}px, ${transform.y}px)`,
+  } : undefined;
+
   return (
-    <div className="bg-white text-textMain p-2 flex flex-col mb-4 rounded-md">
+    <div ref={setNodeRef}
+      {...listeners}
+      {...attributes}
+      className="bg-white text-textMain p-2 flex flex-col mb-4 rounded-md"
+      style={style}
+    >
       <div className="flex items-center gap-2 justify-between">
         <div className="flex items-center gap-2">
           <div className={`w-2 h-2 rounded-xs ${priorityColor}`} />

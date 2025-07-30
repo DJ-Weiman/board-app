@@ -2,6 +2,7 @@ import Header from "@/ui/components/Header/Header";
 import ProjectHeader from "@/ui/components/ProjectHeader";
 import SideNav from "@/ui/components/SideNav/SideNav";
 import LaneContainer from "@/ui/components/SwimLane/LaneContainer";
+import SwinLaneContainer from "@/ui/components/SwimLane/SwinLaneContainer";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,15 +19,7 @@ export default function Home() {
           <ProjectHeader/>
           <hr className="border-red border-0.5 mt-1" />
 
-          <div id="swimLane" className="flex flex-1 h-full">
-            <LaneContainer laneType="To Do" />  
-             <span className="w-[4px] bg-gray-300" />
-            <LaneContainer laneType="In Progress"/>  
-             <span className="w-[4px] bg-gray-300" />
-            <LaneContainer laneType="Approved"/>  
-             <span className="w-[4px] bg-gray-300" />
-            <LaneContainer laneType="Reject"/>
-          </div>
+          <SwinLaneContainer />
         </div>
 
       </div>

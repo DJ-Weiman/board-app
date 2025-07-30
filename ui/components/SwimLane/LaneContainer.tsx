@@ -7,13 +7,17 @@ import { BsThreeDots } from 'react-icons/bs'
 import TaskCard from './TaskCard'
 import useProjectStore from '@/lib/projectSore'
 import { useSearchStore } from '@/lib/searchStore';
+import { useDroppable } from '@dnd-kit/core';
 
 type Props = {
   laneType: Status;
 }
 
 function LaneContainer({ laneType }: Props) {
-  const { changeTaskStatus, getTasksByStatusAndSearchString } = useProjectStore()
+  const { setNodeRef } = useDroppable({
+    id: laneType
+  })
+  const { getTasksByStatusAndSearchString } = useProjectStore()
   const { query } = useSearchStore();
   const tasks = getTasksByStatusAndSearchString(laneType, query);
 
@@ -32,7 +36,7 @@ function LaneContainer({ laneType }: Props) {
           </button>
         </div>
       </div>
-      <div className="flex-1 p-4 min-h-screen h-full">
+      <div ref={setNodeRef} className="flex-1 p-4 min-h-screen h-full">
         {tasks.map((task) =>
           <TaskCard key={task.id} {...task} />
         )}

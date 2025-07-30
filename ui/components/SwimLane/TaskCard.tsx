@@ -14,7 +14,7 @@ function TaskCard({
   title,
   label,
   priority,
-  priorityColor = "bg-gray-100",
+  priorityColor,
   assignedCount,
   taskImg,
   linksCount,
@@ -26,9 +26,17 @@ function TaskCard({
     id: taskId,
   });
 
+  console.log(`Color:w-2 h-2 rounded-xs bg-[${priorityColor}]`);
+
   const style = transform ? {
     transform: `translate(${transform.x}px, ${transform.y}px)`,
   } : undefined;
+
+  const priorityColorStyle = {
+    backgroundColor: priorityColor,
+  }
+
+
 
   return (
     <div ref={setNodeRef}
@@ -39,7 +47,7 @@ function TaskCard({
     >
       <div className="flex items-center gap-2 justify-between">
         <div className="flex items-center gap-2">
-          <div className={`w-2 h-2 rounded-xs ${priorityColor}`} />
+          <div className={`w-2 h-2 rounded-xs`} style={priorityColorStyle} />
           <p className="text-xs">{label}</p>
         </div>
         <BsThreeDots className="w-3 h-3 fill-gray-500 self-end" />
@@ -50,7 +58,7 @@ function TaskCard({
       <div className="mt-2 flex gap-2">
         <AssignedProfiles size={20} count={assignedCount} />
         <div
-          className={`${priorityColor} rounded-md px-2 py-1 text-xs flex items-center gap-1`}
+          className={`bg-gray-100 rounded-md px-2 py-1 text-xs flex items-center gap-1`}
         >
           <BsLightningCharge className="w-2 h-2 fill-gray-800" />
           <p className="text-[8px]">{priority}</p>

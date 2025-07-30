@@ -16,7 +16,7 @@ type Props = {}
 
 const SideNav = (props: Props) => {
     return (
-        <div className='min-h-screen bg-mainBG px-6 pt-6 text-black flex flex-col justify-between'>
+        <div className='min-h-screen bg-mainBG px-6 pt-6 text-textMain flex flex-col justify-between'>
 
             <div>
                 <div className="border border-gray-300 rounded-md flex gap-10 items-center px-4 py-2">

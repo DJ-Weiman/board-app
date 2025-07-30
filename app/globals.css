@@ -16,7 +16,14 @@
   --color-mainBG: #FFFFFF;
   --color-searchBG: #f4f5f6;
   --color-textMain: #777E90;
+  --color-textGray: #353945;
   --color-swimlaneBG: #E6E8EC;
+
+  --color-newBtnBG: #3772FF;
+  --color-inProgressYellow: #FFA800;
+  --color-toDoGray: #E6E8EC;
+  --color-approvedGreen: #AEE753;
+  --color-rejectedRed: #F90430;
 }
 
 

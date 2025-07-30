@@ -20,7 +20,7 @@ function TaskCard({
   dueDate,
 }: Task) {
   return (
-    <div className="bg-white text-textMain p-2 flex flex-col mb-4">
+    <div className="bg-white text-textMain p-2 flex flex-col mb-4 rounded-md">
       <div className="flex items-center gap-2 justify-between">
         <div className="flex items-center gap-2">
           <div className={`w-2 h-2 rounded-xs ${priorityColor}`} />

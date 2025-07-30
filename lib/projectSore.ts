@@ -9,7 +9,7 @@ type ProjectData = typeof sampleProject;
 interface StoreState {
   data: ProjectData;
   changeTaskStatus: (taskId: string, newStatus: Status) => void;
-  getTasksByStatus: (status: Status) => Task[];
+  getTasksByStatusAndSearchString: (status: Status, searchString: string) => Task[];
 }
 
 export const useProjectStore = create<StoreState>()(
@@ -25,9 +25,14 @@ export const useProjectStore = create<StoreState>()(
           return { data: { ...state.data, tasks: [...state.data.tasks] } };
         });
       },
-      getTasksByStatus: (status) => {
+      getTasksByStatusAndSearchString: (status, searchString) => {
         const { data } = get();
-        return data.tasks.filter((task) => task.status === status);
+        return data.tasks
+          .filter((task) => task.status === status)
+          .filter((task) => {
+            if (!searchString) return true; 
+            return task.title.toLowerCase().includes(searchString.toLowerCase());
+          });
       },
     }),
     {

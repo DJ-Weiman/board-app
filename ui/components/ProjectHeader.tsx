@@ -5,7 +5,7 @@ import StatusChip from "./StatusChip";
 import AssignedProfiles from "./AssignedProfiles";
 import { FaPen } from "react-icons/fa6";
 import { LuPen } from "react-icons/lu";
-import useProjectStore from "@/lib/store";
+import useProjectStore from "@/lib/projectSore";
 
 function ProjectHeader() {
   const { data: projectData} = useProjectStore();

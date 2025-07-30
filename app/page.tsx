@@ -18,10 +18,13 @@ export default function Home() {
           <ProjectHeader/>
           <hr className="border-red border-0.5 mt-1" />
 
-          <div id="swimLane" className="flex mt-2 flex-1 gap-2">
-            <LaneContainer laneType="To Do" />
-            <LaneContainer laneType="In Progress"/>
-            <LaneContainer laneType="Approved"/>
+          <div id="swimLane" className="flex flex-1 h-full">
+            <LaneContainer laneType="To Do" />  
+             <span className="w-[4px] bg-gray-300" />
+            <LaneContainer laneType="In Progress"/>  
+             <span className="w-[4px] bg-gray-300" />
+            <LaneContainer laneType="Approved"/>  
+             <span className="w-[4px] bg-gray-300" />
             <LaneContainer laneType="Reject"/>
           </div>
         </div>
